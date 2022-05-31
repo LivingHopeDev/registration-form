@@ -7,19 +7,19 @@
     $country = $_POST["country"];
     
 
-    $name = "{$name}  ";
-    $email = "{$email}  ";
-    $date_of_birth = "{$date_of_birth} ";
-    $gender = "{$gender} ";
-    $country = "{$country}  ";
+      $output = "{$name} ,";
+    $output .= "{$email} ,";
+    $output .= "{$date_of_birth} , ";
+    $output .= "{$gender} ,";
+    $output .= "{$country} ,";
+    $output .= "\n";
 
 $filename ="userdata.csv";
 $fhandle = fopen($filename, "a"); 
-fwrite($fhandle,  $name);  
-fwrite($fhandle,  $email);  
-fwrite($fhandle,  $date_of_birth);  
-fwrite($fhandle,  $gender);  
-fwrite($fhandle,  $country);  
+fwrite($fhandle,  $output);  // fwrite($fhandle,  $email);  
+// fwrite($fhandle,  $date_of_birth);  
+// fwrite($fhandle,  $gender);  
+// fwrite($fhandle,  $country);  
 
 fclose ($fhandle); // close file
 
