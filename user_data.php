@@ -7,11 +7,11 @@
     $country = $_POST["country"];
     
 
-      $output = "{$name} ,";
+    $output = "{$name} ,";
     $output .= "{$email} ,";
     $output .= "{$date_of_birth} , ";
     $output .= "{$gender} ,";
-    $output .= "{$country} ,";
+    $output .= "{$country} ";
     $output .= "\n";
 
 $filename ="userdata.csv";
